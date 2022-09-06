@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=BIZ UDPGothic' rel='stylesheet'>
+    
+    
+   
+    
+    
+    
+    <style type="text/css">
+body {
+    background:#FE8116;
+    margin: 0;
+    padding: 0;
+    z-index:7;
+  }
+  @font-face {
+    font-family: 'Malayalam';
+    src: url('../fonts/meera.eot');
+    src: url('../fonts/meera.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/meera.woff') format('woff'),
+         url('../fonts/meera.ttf') format('truetype'),
+         url('../fonts/meera.svg#Malayalam') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  .circle1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height:8.75vw;
+        width:8.75vw;
+        background-color:#FE8116;
+        border-radius: 50%;
+        z-index:3;
+     }
+      .circle2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height:19.1vw;
+        width:19.1vw;
+        background-color:rgb(51, 102, 17);
+        border-radius: 50%;
+        z-index:2;
+     }
+     .heart1{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+       top: -4.5vw;
+       margin: auto;
+       left:-0.3vw;
+       background:rgb(215, 11, 96);
+       transform: rotate(225deg);
+       z-index:3;
+    }
+    .heart1::before, .heart1::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background:rgb(215, 11, 96);
+       
+    }
+    .heart1::before{
+       left:-1.5625vw;
+
+    }
+    .heart1::after{
+       top:-1.5625vw;
+    }
+    
+
+
+    .heart2{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+       top:7.1vw;
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(45deg);
+       z-index:3;
+    }
+    .heart2::before, .heart2::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart2::before{
+       left: -1.5625vw;
+    }
+    .heart2::after{
+       top:-1.5625vw;
+    }
+    
+
+    .heart3{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+        top:-3.2vw;
+        left:7.4vw;
+        transform: translate(-50%, -50%);
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(-45deg);
+       z-index:3;
+    }
+    .heart3::before, .heart3::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart3::before{
+       left: -1.5625vw;
+    }
+    .heart3::after{
+       top: -1.5625vw;
+    }
+
+    .heart4{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+        top:-5.9vw;
+        left:-7.4vw;
+        transform: translate(-50%, -50%);
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(135deg);
+       z-index:3;
+    }
+    .heart4::before, .heart4::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart4::before{
+       left:-1.5625vw;
+    }
+    .heart4::after{
+       top:-1.5625vw;
+    }
+
+    .heart5{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+        top:-14.5vw;
+        left:-5.6vw ;
+        transform: translate(-50%, -50%);
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(180deg);
+       z-index:3;
+    }
+    .heart5::before, .heart5::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart5::before{
+       left: -1.5625vw
+    }
+    .heart5::after{
+       top: -1.5625vw;
+    }
+
+    .heart6{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+        top:-17.9vw;
+        left: 5.1vw;
+        transform: translate(-50%, -50%);
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(270deg);
+       z-index:3;
+    }
+    .heart6::before, .heart6::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart6::before{
+       left: -1.5625vw;
+    }
+    .heart6::after{
+       top:-1.5625vw;
+    }
+
+    .heart7{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+        top:-10.5vw;
+        left:5.1vw;
+        transform: translate(-50%, -50%);
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(0deg);
+       z-index:3;
+    }
+    .heart7::before, .heart7::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart7::before{
+       left: -1.5625vw;
+    }
+    .heart7::after{
+       top: -1.5625vw;
+    }
+
+    .heart8{
+       width:3.1vw;
+       height:3.1vw;
+       transform: rotate(45deg);
+       transform-origin: center;
+       position: relative;
+        top:-13.3vw;
+        left:-5vw;
+        transform: translate(-50%, -50%);
+       margin: auto;
+       background:rgb(215, 11, 96);
+       transform: rotate(90deg);
+       z-index:3;
+    }
+    .heart8::before, .heart8::after{
+       content: '';
+       position: absolute;
+       width:3.1vw;
+       height:3.1vw;
+       border-radius: 50%;
+       background: rgb(215, 11, 96);
+    }
+    .heart8::before{
+       left: -1.5625vw;
+    }
+    .heart8::after{
+       top: -1.5625vw;
+    }
+    .circle3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: 'BIZ UDPGothic';
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:38.45vw;
+        width:38.45vw;
+        background-color:#72147E;
+        border-radius: 50%;
+        z-index:5;
+     }
+     .mc1{
+        text-align: center;
+        line-height:9.7vw;
+        font-size:1vw;
+        position:relative;
+        top:3.4vw;
+        left: 19.225vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:5;
+     
+     }
+     .mc1:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+     .mc2{
+        font-size:1vw;
+        text-align: center;
+        line-height:9.7vw;
+        position:relative;
+        top:-1.5vw;
+        left: 7.6vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:4;
+     
+     }
+     .mc2:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+     
+     .mc3{
+        font-size:1vw;
+        text-align: center;
+        line-height:9.7vw;
+        position:relative;
+        top:-12.5vw;
+        left: 31vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:4;
+     
+     }
+     .mc3:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+     
+     .mc4{
+        font-size:1vw;
+        text-align: center;
+        line-height:9.7vw;
+        position:relative;
+        top:-12vw;
+        left:5.2vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:4;
+     
+     }
+     .mc4:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+     .mc5{
+        font-size:1vw;
+        text-align: center;
+        line-height:9.7vw;
+        position:relative;
+        top:-23.5vw;
+        left: 33.5vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:4;
+     
+     }
+     .mc5:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+
+     .mc6{
+        font-size:1vw;
+        text-align: center;
+        line-height:9.7vw;
+        position:relative;
+        top:-24.5vw;
+        left:12.6vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:4;
+     
+     }
+     .mc6:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+     .mc7{
+        font-size:1vw;
+        text-align: center;
+        line-height:9.7vw;
+        position:relative;
+        top:-35.5vw;
+        left:25.8vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9.7vw;
+        width:9.7vw;
+        background-color:#FEDB39;
+        border-radius: 50%;
+        z-index:4;
+     
+     }
+     .mc7:hover{
+        z-index:5;
+        height:10.5vw;
+        width:10.5vw;
+        
+     }
+
+     img {
+        width:16vw;
+        position: absolute;
+        top:52%;
+       left:0;
+       transform: translate(0%,-50%);
+       z-index:5;
+     }
+   
+     .gc{
+        position: absolute;
+        top: 54%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:40.45vw;
+        width:40.45vw;
+        background-color:#42855B;
+        border-radius: 50%;
+        filter: drop-shadow(-0.5vw 0.5vw 2vw #58610f);
+        z-index:5;
+     }
+    
+    /* @media only screen and (max-width:1343px) and (min-width: 501px){
+        .heart1::before{
+       left: -25px;
+
+    }
+    .heart1::after{
+       top: -25px;
+    }
+     }*/
+     .dc1{
+        position:relative;
+        top:7vh;
+        left:90vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:7vw;
+        width:7vw;
+        background-color:#ffa80f;
+        border-radius: 50%;
+        filter: drop-shadow(0 0.5vw 0.5vw #a5481d);
+        z-index:6;
+     }
+     .dc2{
+        position:absolute;
+        top:90vh;
+        left:90vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:7.5vw;
+        width:7vw;
+        background-color:#ffa80f;
+        border-radius: 50%;
+        filter: drop-shadow(0 0.5vw 0.5vw #a5481d);
+        z-index:6;
+     }
+     .dc3{
+        position:absolute;
+        top:20vh;
+        right:16vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:5vw;
+        width:5vw;
+        background-color:#ffa80f;
+        border-radius: 50%;
+        z-index:6;
+     }
+     .dc4{
+        position:absolute;
+        top:37vh;
+        right: 1vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:5vw;
+        width:5vw;
+        background-color:#ffa80f;
+        border-radius: 50%;
+        
+        z-index:6;
+     }
+     .dc5{
+        position:absolute;
+        top:55vh;
+        right:10vw;
+        transform: translate(-50%, -50%);
+        transform: scale();
+        height:9vw;
+        width:9vw;
+        background-color:#ffa80f;
+        border-radius: 50%;
+        
+        z-index:6;
+     } 
+     canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#FE8116;
+    z-index:4;
+  }
+  @media screen and (max-width: 810px)
+  {
+
+  }
+     #heading{
+        width:15vw;
+  margin: auto;
+  height:15vh;
+  line-height:15vh;
+  transform: scale(2);
+  
+  
+        position: relative;
+       top:-10vh;
+       left:1vw;
+ 
+       z-index:5;
+     }
+     h1{
+        text-align: center;
+
+
+     }
+  </style>
+</head>
+<body>
+    
+<canvas height="400px" width="600px"></canvas>
+<script>
+let canvas = document.querySelector('canvas');
+let c = canvas.getContext('2d');
+
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+
+const ch = c.canvas.height;
+const cw = c.canvas.width;
+
+let h = 0;
+let increment = 3;
+let flakes = [];
+let snowAmount = 10;
+let randomInterval = 1000;
+let index = 0;
+
+
+function drawSnow(x, y){
+    c.beginPath();
+    c.arc(x, y, 4, 0, Math.PI*2);
+    c.fillStyle = '#ffffff44';
+    c.fill();
+
+    c.beginPath();
+    c.arc(x, y, 2, 0, Math.PI*2);
+    c.fillStyle = '#FE8116';
+    c.fill();
+}
+
+function eraseSnow(x, y){
+    c.beginPath();
+    c.arc(x, y - increment, 6, 0, Math.PI*2);
+    c.fillStyle = '#FE8116';
+    c.fill();
+}
+
+function setIncrements(){
+    let level = [];
+    let randomX = [];
+    flakes.forEach((snow, i) => {
+        if(snow === false){
+            level[i] = 0;
+            randomX[i] = Math.floor(Math.random() * (cw - 0 + 1)) + 0;
+            flakes[i] = 'snow'+i;
+            flakes[i] = setInterval(() => {
+                if(level[i] < ch + 10){
+                    eraseSnow(randomX[i], level[i]);
+                    drawSnow(randomX[i], level[i]);
+                    level[i]++;
+                } else {
+                    clearInterval(flakes[i]);
+                    flakes.splice(i, 1, false);
+                    flakes[i] = false;
+                    setIncrements();
+                }
+            }, 10);
+        }
+    });
+}
+
+function setSnow(){  
+    let timer = setInterval(() => {
+        if(index < 100){
+            flakes[index] = false;
+            index++; 
+            setIncrements();
+        } else {
+            clearInterval(timer);
+            index = 0;
+        }
+        
+    }, randomInterval);
+}
+
+setSnow();
+</script>
+
+<div class="gc">
+    <!--<div id="heading">
+        <h1 style="color:red"><div>
+            <h1 style="color:red">ന്നാ ബാ ഓണം കൂടാം...</h1>-->
+            <div id="heading">  
+                <img src="Images homepage/onamhead.png">
+        
+            
+        </div>
+    <div class="circle3">
+        <div class="mc1"><h4><a href="ritual.html" style="text-decoration: none;">ONAM RITUALS</a></h4></div><!--top-->
+        <div class="mc2"><h4>KING MAHABALI</h4></div><!--left top-->
+        <div class="mc3"><h4><a href="pooklm.html" style="text-decoration: none;">POOKKALAM</a></h4></div><!--right top-->
+        <div class="mc4"><h4><a href="games.html" style="text-decoration: none;">ONAM GAMES</a></h4></div><!--left bottom-->
+        <div class="mc5"><h4>VALLAM KALI</h4></div><!--right bottom-->
+        <div class="mc6"><h4><a href="sadhya_new.html" style="text-decoration: none;">ONAM SADHYA</a></h4></div><!--bottom left-->
+        <div class="mc7"><h4><a href="onamsongs.html" style="text-decoration: none;">ONAM SONGS</a></h4></div><!--bottom right-->
+        <div class="circle1">
+            
+            <div class="heart1"></div> <!--top-->
+            <div class="heart2"></div><!--bottom-->
+            <div class="heart3"></div><!--right-->
+            <div class="heart4"></div><!--left-->
+            <div class="heart5"></div><!--northwest-->
+            <div class="heart6"></div><!--northeast-->
+            <div class="heart7"></div><!--southeast-->
+            <div class="heart8"></div><!--southwest-->
+        </div>
+        <div class="circle2"></div>
+    </div>
+</div>
+<div><img src="Images homepage/kathakali final.png" alt="kathakali" /></div>
+<div class="dc1"></div>
+<div class="dc2"></div>
+<div class="dc3"></div>
+<div class="dc4"></div>
+<div class="dc5"></div>
+<!--<div>
+    <p id="demo"></p>
+
+<script>
+var w = window.innerWidth;
+var k = window.innerHeight;
+
+var x = document.getElementById("demo");
+x.innerHTML = "Browser width: " + w + ", height: " + k + ".";
+</script>
+</div>    -->
+
+
+
+
+</body>
+</html>
