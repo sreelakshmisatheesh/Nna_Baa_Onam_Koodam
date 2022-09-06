@@ -1,0 +1,63 @@
+.container-fluid{
+    padding:3% 15%;
+    background-color:#ffb037;
+}
+.heading{
+    text-align: center;
+    color: #ffffff;
+}
+/* .bg{
+    background-image: url("pookkalam.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+} */
+
+#onamsongs{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #E9DAC1;
+}
+
+.firstrow{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    
+}
+.secondrow{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    
+
+}
+.song{
+    text-align: center;
+}
+.cardtext{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+h4{
+    text-align: center;
+}
+.startingpara{
+    text-align: center;
+}
+.cardtop{
+    background-color: #F7A76C;
+}
+.cardtext{
+    background-color:#FEF5AC;
+}
+
+.card:hover{
+    transform: scale(1.1);
+
+}
+.card{
+    transition: transform .5s;
+}
